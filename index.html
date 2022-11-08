@@ -15,29 +15,33 @@
     </header>
 
     <main class="container-fluid">
-        <section>
-            <form class="col-12 col-sm-12 col-md-3 float-left" id="search-form">
+        <section class="col-12 col-sm-12 col-md-3 float-left">
+            <form id="search-form">
                 <div>
-                <label for="city">Search For Your City!</label>
+                <h3 for="city">Search For Your City!</h3>
                 <input type="city" class="form-control" id="search-input" placeholder="Los Angeles, CA">
-                <input class="btn btn-primary btn-block" type="submit" value="Submit">
+                <input class="btn btn-primary btn-block" type="submit" value="Search">
                 </div>
             </form>
 
-            <div class="col-12 col-sm-12 col-md-9 float-right" id="weeklyForecast">
-                <h2> Current Weather </h2
+            
+        </section>
 
-                <div class="row my-8" id="fiveDayForecast">
-                    <h2>Five Day Forecast</h2>
-                    <div class="square" id="day1"></div>
-                    <div class="square" id="day2"></div>
-                    <div class="square" id="day3"></div>
-                    <div class="square" id="day4"></div>
-                    <div class="square" id="day5"></div>
-                </div>
+        <section class="col-12 col-sm-12 col-md-9 float-right">
+            <div id="weeklyForecast">
+                <h3> Current Weather </h3>
             </div>
 
-        </section>
+            <div id="fiveDayForecast">
+                <h3>Five Day Forecast</h3>
+                <div class="square" id="day1"></div>
+                <div class="square" id="day2"></div>
+                <div class="square" id="day3"></div>
+                <div class="square" id="day4"></div>
+                <div class="square" id="day5"></div>
+            </div>
+        </section>    
+
 
     </main>
 
@@ -45,6 +49,6 @@
 
     </footer>
 
-    
+  <script src="./assets/script.js"></script>
 </body>
 </html>
