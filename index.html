@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <title>Weather Dashboard</title>
 </head>
+
 <body>
-    <nav class="d-flex justify-content-center text-white bg-primary">
+    <header class="d-flex justify-content-center text-white bg-primary">
         <h1>Weather Dashboard</h1>
-    </nav>
+    </header>
 
-    <section>
-        <form class="form">
-            <div>
-              <h2 for="City">Search for your City:</h2>
-              <input type="city" class="form-control" id="city" placeholder="Los Angeles">
-              <input class="btn btn-primary btn-block" type="submit" value="Submit">
+    <main class="container-fluid">
+        <section>
+            <form class="col-12 col-sm-12 col-md-3 float-left" id="search-form">
+                <div>
+                <label for="city">Search For Your City!</label>
+                <input type="city" class="form-control" id="search-input" placeholder="Los Angeles, CA">
+                <input class="btn btn-primary btn-block" type="submit" value="Submit">
+                </div>
+            </form>
+
+            <div class="col-12 col-sm-12 col-md-9 float-right" id="weeklyForecast">
+                <h2> Current Weather </h2
+
+                <div class="row my-8" id="fiveDayForecast">
+                    <h2>Five Day Forecast</h2>
+                    <div class="square" id="day1"></div>
+                    <div class="square" id="day2"></div>
+                    <div class="square" id="day3"></div>
+                    <div class="square" id="day4"></div>
+                    <div class="square" id="day5"></div>
+                </div>
             </div>
-        </form>
 
+        </section>
 
-    </section>
+    </main>
 
     <footer class="d-flex justify-content-center text-white bg-primary">
 
